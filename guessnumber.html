@@ -5,7 +5,9 @@
 		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
 		<link href="css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
+
 		<link href='http://fonts.googleapis.com/css?family=Fredericka+the+Great' rel='stylesheet' type='text/css'>
 		<link href="css/style.css" rel="stylesheet" media="screen">
 	</head>
@@ -21,38 +23,51 @@
 				</div>
 			</div>
 		</header>
-		<div id="content" class="container">
-			<div class="element">
-				<div class="row">
-					<div class="span12">
-						<h2>Result</h2>
-						<div id="result"></div>
+		<div id="mainner" class="container">
+			<div class="row">
+				<div class="span12">
+					<div class="element">
+						<h2 class="regular-title">Instruction</h2>
+						<div class="regular-content">
+							<p>
+								90年代电子词典文曲星上的怀旧经典推理小游戏，需要猜测4个数字及其排列顺序，一共有10无限次机会。若猜不对会提示[?A?B] ?A数字和位置都正确的个数，B代表数字正确但位置不正确的个数。
+								例如正确答案1234，若猜测 1354的话，会返回2A1B,因为"1","4"数值和位置正确，"3"数值正确位置不正确。
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="element">
-				<div class="row">
-					<div class="span12">
-						<h2>Guess</h2>
-						<form>
-						<div class="row">
-							<div class="span3">
+			<div class="row">
+				<div class="span4">
+					<div class="element">
+						<h2 class="regular-title">Guess</h2>
+						<div class="regular-content guess-form">
+							<form class="form-horizontal">
 								<input type="text" name="guess0" id="guess0" maxlength="1"/>
-							</div>
-							<div class="span3">
 								<input type="text" name="guess1" id="guess1" maxlength="1"/>
-							</div><div class="span3">
 								<input type="text" name="guess2" id="guess2" maxlength="1"/>
-							</div><div class="span3">
 								<input type="text" name="guess3" id="guess3" maxlength="1"/>
-							</div>
+								<input type="button" name="guess" value="guess" class="btn" onclick="guessNumber()"/>
+							</form>
 						</div>
-						</form>
-						<div class="row">
-					<div class="span2 offset5">
-						<input type="button" name="guess" value="guess" class="span2" onclick="guess()"/>
 					</div>
 				</div>
+				<div class="span6 offset2">
+					<div class="element">
+						<h2 class="regular-title">Result</h2>
+						<div class="regular-content guess-result">
+							<table class="table table-hover">
+								<thead>
+								<tr>
+									<th>#</th>
+									<th>input</th>
+									<th>result</th>
+								</tr>
+								</thead>	
+								<tbody id="result"></tbody>
+							</table>
+							
+						</div>
 					</div>
 				</div>
 			</div>
@@ -60,8 +75,5 @@
 		<script src="http://code.jquery.com/jquery.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/guessnumber.js"></script>
-		<script type="text/javascript">
-
-		</script>
 	</body>
 </html>
