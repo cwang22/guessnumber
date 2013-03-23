@@ -1,72 +1,69 @@
 body {
 	font: 14px/24px arial;
 	background-color: #e8e8e8;
-	margin:0;
-	padding:0;
+	margin: 0;
+	padding: 0;
 }
-.container{
-	margin:0 auto;
+.container {
+	margin: 0 auto;
 }
 header {
 	height: 140px;
 	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 	background: #f7f7f7;
-	margin:0;
-	padding:0;
+	margin: 0;
+	padding: 0;
 }
 header h1 {
-	padding-top:20px;
-	text-align:center;
-	font-size:30px;
+	padding-top: 20px;
+	text-align: center;
+	font-size: 38px;
 	font-family: 'Fredericka the Great', cursive;
-	margin-top:0;
+	margin-top: 0;
 }
-
-.element{
+#mainner{
+	height: 1000px;
+}
+.element {
 	background: white;
 	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-	margin:40px 0;
+	margin: 40px 0;
 }
-.regular-title{
+.regular-title {
 	height: 60px;
 	font: 30px/60px Arial;
 	background-color: #f7f7f7;
-	color:#6699FF;
-	padding-left:30px;
+	color: #6699FF;
+	padding-left: 30px;
 	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 	border-left: #6699ff solid 6px;
 }
-.regular-content{
+.regular-content {
 	margin: 10px;
-	padding-bottom:20px;
+	padding-bottom: 20px;
+	
+}
+.regular-content p{
+	text-indent: 2em;
 }
 .guess-form {
-	margin:20px;
+	margin: 20px;
 }
-.guess-form input[type=text]{
-	margin-right:5px;
-	width:40px;
+.guess-form input[type=text] {
+	margin-right: 5px;
+	width: 40px;
 }
-.guess-result table td{
-	width:60px;	
+.guess-result table th, .guess-result table td{
+	text-align: center;
 }
-/*
-#content .element{
-	margin-top:60px;
-	padding:20px 0;
-	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-	background: #fff;
-}*/
-
-/*
-#mainner h2{
+#footer {
+	color:#FFF9C0;
 	text-align:center;
-	margin:20px;
-	font:24px/48px;
-	padding-bottom:5px;
-	border-bottom:1px solid #09c;
-	color:#09c;
-}*/
-
-
-
+	width: 100%;
+	height:120px;
+	box-shadow: 10px 2px 0 0 rgba(0, 0, 0, 3);
+	background-color: #333333;
+}
+#footer #copyright{
+	padding-top:30px;
+}
