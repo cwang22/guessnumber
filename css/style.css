@@ -1,17 +1,25 @@
 body {
 	font: 14px/24px arial;
 	background-color: #e8e8e8;
+	margin:0;
+	padding:0;
+}
+.container{
+	margin:0 auto;
 }
 header {
 	height: 140px;
 	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 	background: #f7f7f7;
+	margin:0;
+	padding:0;
 }
 header h1 {
-	margin-top:20px;
+	padding-top:20px;
 	text-align:center;
 	font-size:30px;
 	font-family: 'Fredericka the Great', cursive;
+	margin-top:0;
 }
 #content .element{
 	margin-top:60px;
