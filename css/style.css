@@ -1,0 +1,31 @@
+body {
+	font: 14px/24px arial;
+	background-color: #e8e8e8;
+}
+header {
+	height: 140px;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+	background: #f7f7f7;
+}
+header h1 {
+	margin-top:20px;
+	text-align:center;
+	font-size:30px;
+	font-family: 'Fredericka the Great', cursive;
+}
+#content .element{
+	margin-top:60px;
+	padding:20px 0;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+	background: #fff;
+}
+#content h2{
+	text-align:center;
+	margin:20px;
+	font:24px/48px;
+	padding-bottom:5px;
+	border-bottom:1px solid #09c;
+	color:#09c;
+}
+
+
